@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watch Online</title>
+    <link rel="stylesheet" href="js/flowplayer-6.0.3/skin/functional.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/popModal.js"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
+    <script type="text/javascript" src="js/flowplayer-6.0.3/flowplayer.js"></script>
+
+    <style type="text/css">
+        #d-search {
+            padding: 20px;
+            height: 50px;
+            background-color: rgba(65, 95, 89, 0.85);
+            color: white;
+        }
+
+        #d-header {
+            position: fixed;
+        }
+
+        #f-search {
+            position: absolute;
+            right: 10px;
+        }
+
+        #d-pager > div {
+            /*position: absolute;*/
+            /*top: 95px;*/
+        }
+
+        .error-msg {
+            position: fixed;
+        }
+
+        .swipe {
+            overflow: hidden;
+            visibility: hidden;
+            position: relative;
+        }
+
+        .swipe-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .swipe-wrap > div {
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+
+        .fp-playlist {
+            position: absolute;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="d-search">
+    <div id="d-header"></div>
+    <form id="f-search">
+        <input id="i-search-text" type="text">
+        <input id="i-search-submit" type="submit" value="Search">
+    </form>
+</div>
+<div id="d-pager" class="swipe">
+    <div class="swipe-wrap">
+        <div id="d-search-result">
+            <div class="error-msg"></div>
+            <ul id="u-search-list">
+            </ul>
+        </div>
+        <div id="d-series">
+            <table id="t-episodes">
+            </table>
+        </div>
+        <div id="d-episode">
+        </div>
+        <div id="d-player-container">
+            <div id="d-player">
+                <!--<video id="v-player"></video>-->
+                <div class="fp-playlist"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

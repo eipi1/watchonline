@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "name": "WatchOnline",
+  "main": "index.html",
+  "window": {
+    "title": "WatchOnline",
+    "toolbar": true
+  },
+  "dependencies": {
+    "string": "*",
+    "cheerio": "*",
+    "bluebird": "*"
+  },
+  "webkit": {
+    "plugin": true
+  }
+}
